@@ -22,6 +22,7 @@
   background-size: 84px 84px;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), transparent 72%);
   pointer-events: none;
+  animation: gridDrift 18s ease-in-out infinite alternate;
 }
 
 .site-header,
@@ -53,6 +54,7 @@
   box-shadow:
     0 18px 32px rgba(8, 30, 66, 0.08),
     inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  animation: slideDown 700ms ease both;
 }
 
 .brand {
@@ -183,6 +185,8 @@
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -190,9 +194,24 @@
     box-shadow 180ms ease;
 }
 
+.button::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 -35%;
+  width: 30%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-18deg);
+  transition: left 340ms ease;
+}
+
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
+}
+
+.button:hover::after,
+.button:focus-visible::after {
+  left: 115%;
 }
 
 .button-primary {
@@ -240,6 +259,10 @@
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 14px 34px rgba(8, 30, 66, 0.08);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
 }
 
 .stat-card,
@@ -274,6 +297,20 @@
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.86);
   box-shadow: 0 12px 26px rgba(8, 30, 66, 0.06);
+  animation: fadeUp 700ms ease both;
+}
+
+.stat-card:hover,
+.info-card:hover,
+.service-card:hover,
+.industry-card:hover,
+.project-card:hover,
+.summary-panel:hover,
+.belief-card:hover,
+.live-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 42px rgba(8, 30, 66, 0.12);
+  border-color: rgba(47, 123, 231, 0.18);
 }
 
 .hero-visual {
@@ -284,6 +321,7 @@
   align-content: center;
   min-height: auto;
   padding: 24px 0;
+  animation: fadeUp 850ms ease both;
 }
 
 .signal-orb {
@@ -297,6 +335,7 @@
   width: 240px;
   height: 240px;
   background: radial-gradient(circle, rgba(59, 130, 246, 0.28), rgba(59, 130, 246, 0));
+  animation: orbFloat 10s ease-in-out infinite;
 }
 
 .signal-orb-small {
@@ -304,6 +343,7 @@
   width: 150px;
   height: 150px;
   background: radial-gradient(circle, rgba(12, 37, 68, 0.18), rgba(12, 37, 68, 0));
+  animation: orbFloat 12s ease-in-out infinite reverse;
 }
 
 .hero-panel {
@@ -314,6 +354,7 @@
   box-shadow: 0 20px 42px rgba(8, 30, 66, 0.12);
   padding: 22px;
   overflow: hidden;
+  animation: floatCard 8s ease-in-out infinite;
 }
 
 .hero-panel span,
@@ -355,15 +396,18 @@
 
 .hero-panel-secondary {
   grid-column: 1 / 2;
+  animation-delay: 0.5s;
 }
 
 .hero-panel-tertiary {
   grid-column: 2 / 3;
+  animation-delay: 1s;
 }
 
 .section-heading {
   max-width: 760px;
   margin-bottom: 30px;
+  animation: fadeUp 700ms ease both;
 }
 
 .intro-grid,
@@ -385,6 +429,7 @@
 
 .service-card {
   min-height: 100%;
+  animation: fadeUp 760ms ease both;
 }
 
 .expertise-grid .info-card,
@@ -677,11 +722,22 @@
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
 }
 
 .footer-social .icon {
   width: 18px;
   height: 18px;
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .site-footer a {
@@ -697,6 +753,7 @@
   backdrop-filter: blur(10px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   text-align: center;
+  animation: fadeUp 760ms ease both;
 }
 
 .footer-label {
@@ -865,6 +922,84 @@
 
 .legal-section-card h3 {
   margin-bottom: 10px;
+}
+
+.stats-grid .stat-card:nth-child(2),
+.services-grid .service-card:nth-child(2),
+.expertise-grid .info-card:nth-child(2),
+.engagement-grid .project-card:nth-child(2),
+.footer-panel:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.stats-grid .stat-card:nth-child(3),
+.services-grid .service-card:nth-child(3),
+.expertise-grid .info-card:nth-child(3),
+.engagement-grid .project-card:nth-child(3),
+.footer-panel:nth-child(4) {
+  animation-delay: 220ms;
+}
+
+.services-grid .service-card:nth-child(4),
+.expertise-grid .info-card:nth-child(4),
+.footer-panel:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orbFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(8px, -10px, 0) scale(1.04);
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes gridDrift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(10px, -8px, 0);
+  }
 }
 
 @media (max-width: 1180px) {
