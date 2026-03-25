@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --blue-900: #081d38;
+  --blue-800: #0f2f57;
+  --blue-700: #17427a;
+  --blue-500: #2f7be7;
+  --blue-200: #dce9fb;
+  --surface: #f4f7fb;
+  --surface-alt: #edf2f8;
+  --text-strong: #111827;
+  --text-soft: #4b5563;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-soft);
+  background:
+    linear-gradient(180deg, #dfe8f6 0%, #edf2f8 42%, #d8e3f3 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 110px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 20%, rgba(49, 122, 231, 0.12), transparent 30%),
+    radial-gradient(circle at 100% 0%, rgba(17, 58, 112, 0.12), transparent 24%);
+  pointer-events: none;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--text-strong);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-size: 1.24rem;
+  letter-spacing: -0.02em;
+}
+
+p,
+li {
+  color: var(--text-soft);
+}
+
+#root {
+  min-height: 100vh;
+}

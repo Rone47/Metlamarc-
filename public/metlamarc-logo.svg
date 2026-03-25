@@ -1,0 +1,14 @@
+<svg width="520" height="140" viewBox="0 0 520 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#111111" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 108 70 42l28 66"/>
+    <path d="M110 108l28-66 28 66"/>
+    <path d="M246 108l28-66 28 66"/>
+    <path d="M314 108l28-66 28 66"/>
+    <path d="M410 108l-28-66-28 66"/>
+    <path d="M206 108l-28-66-28 66"/>
+  </g>
+  <rect x="112" y="56" width="296" height="32" fill="white" fill-opacity="0.98"/>
+  <text x="260" y="79" text-anchor="middle" fill="#A6A6A6" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="10">
+    METLAMARC
+  </text>
+</svg>
