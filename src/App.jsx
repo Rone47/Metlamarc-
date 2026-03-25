@@ -15,6 +15,23 @@ const stats = [
   { value: '1', label: 'partner for build, secure, and investigate' },
 ]
 
+const focusWords = [
+  'software engineering',
+  'cybersecurity analysis',
+  'penetration testing',
+  'digital forensics',
+  'IT consulting',
+]
+
+const tickerItems = [
+  'Web Platforms',
+  'Security Reviews',
+  'Penetration Testing',
+  'Digital Forensics',
+  'IT Strategy',
+  'Systems Integration',
+]
+
 const serviceLines = [
   {
     icon: 'code',
@@ -418,6 +435,17 @@ function App() {
               aligned technology procurement as part of a broader delivery strategy.
             </p>
 
+            <div className="hero-motion-copy" aria-label="Active Metlamarc focus areas">
+              <span className="motion-label">Active focus</span>
+              <div className="word-stack">
+                {focusWords.map((word, index) => (
+                  <span key={word} style={{ '--word-index': index }}>
+                    {word}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <div className="hero-actions">
               <a className="button button-primary" href="#contact">
                 Start a Consultation
@@ -434,6 +462,14 @@ function App() {
                   <span>{item.label}</span>
                 </article>
               ))}
+            </div>
+
+            <div className="service-marquee" aria-label="Scrolling technology capabilities">
+              <div className="service-marquee-track">
+                {[...tickerItems, ...tickerItems].map((item, index) => (
+                  <span key={`${item}-${index}`}>{item}</span>
+                ))}
+              </div>
             </div>
           </div>
 
