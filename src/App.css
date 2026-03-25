@@ -12,6 +12,13 @@
   overflow: hidden;
 }
 
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .site-shell::before {
   content: '';
   position: absolute;
@@ -147,6 +154,24 @@
   margin: 0;
 }
 
+.hero-copy,
+.hero-visual,
+.hero-panel,
+.stat-card,
+.info-card,
+.service-card,
+.industry-card,
+.project-card,
+.summary-panel,
+.belief-card,
+.live-summary,
+.contact-form,
+.contact-stack,
+.footer-brand,
+.footer-panel {
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 14px;
   font-size: 0.82rem;
@@ -159,6 +184,7 @@
 .hero-copy h1 {
   max-width: 14ch;
   margin-bottom: 18px;
+  overflow-wrap: anywhere;
 }
 
 .hero-text {
@@ -371,6 +397,7 @@
   color: var(--text-soft);
   font-size: 0.98rem;
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .stat-card {
@@ -1227,6 +1254,8 @@
 
   .hero-copy h1 {
     max-width: 100%;
+    font-size: clamp(2.3rem, 10vw, 3.7rem);
+    line-height: 1.05;
   }
 
   .hero-motion-copy {
@@ -1243,6 +1272,31 @@
   .hero-visual {
     grid-template-columns: 1fr;
     padding: 12px 0 0;
+  }
+
+  .hero-panel,
+  .stat-card {
+    width: 100%;
+  }
+
+  .hero-panel strong {
+    font-size: 1.05rem;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-panel p,
+  .hero-panel li {
+    font-size: 0.98rem;
+    overflow-wrap: anywhere;
+  }
+
+  .service-marquee-track {
+    gap: 14px;
+  }
+
+  .service-marquee-track span {
+    font-size: 0.78rem;
+    gap: 14px;
   }
 
   .site-footer {
@@ -1272,12 +1326,62 @@
     width: 100%;
   }
 
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    letter-spacing: -0.04em;
+  }
+
+  .hero-text {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .stats-grid {
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .stat-card {
+    min-height: 110px;
+    padding: 16px 18px;
+  }
+
+  .stat-card strong {
+    font-size: 1.4rem;
+  }
+
+  .stat-card span {
+    font-size: 0.92rem;
+  }
+
   .hero-panel {
     padding: 18px;
   }
 
+  .hero-panel {
+    border-radius: 22px;
+  }
+
+  .hero-panel strong {
+    font-size: 1rem;
+  }
+
+  .hero-panel p,
+  .hero-panel li {
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
   .service-marquee {
-    mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
+    display: none;
+  }
+
+  .word-stack span {
+    font-size: 0.98rem;
   }
 
   .contact-form,
