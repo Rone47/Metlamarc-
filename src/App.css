@@ -192,6 +192,13 @@ body,
   font-size: 1.02rem;
 }
 
+.email-display {
+  display: inline;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.45;
+}
+
 .hero-motion-copy {
   display: flex;
   align-items: center;
@@ -301,6 +308,9 @@ body,
 .expertise-grid,
 .sector-grid,
 .engagement-grid,
+.delivery-grid,
+.testimonial-grid,
+.testimonial-layout,
 .field-grid,
 .principles-layout,
 .contact-layout,
@@ -433,6 +443,44 @@ body,
   animation: fadeUp 850ms ease both;
 }
 
+.hero-tech-bg,
+.hero-monitor-art,
+.hero-hud-art,
+.hero-soc-art {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-tech-bg {
+  inset: -4% -4% auto auto;
+  width: min(520px, 92%);
+  opacity: 0.12;
+  filter: saturate(1.1);
+}
+
+.hero-monitor-art {
+  right: -24px;
+  bottom: 8px;
+  width: min(310px, 48%);
+  opacity: 0.9;
+}
+
+.hero-hud-art {
+  top: -10px;
+  right: 40px;
+  width: min(220px, 38%);
+  opacity: 0.26;
+  animation: slowSpin 24s linear infinite;
+}
+
+.hero-soc-art {
+  top: 72px;
+  left: -6px;
+  width: min(110px, 18%);
+  opacity: 0.92;
+}
+
 .signal-orb {
   position: absolute;
   border-radius: 999px;
@@ -457,6 +505,7 @@ body,
 
 .hero-panel {
   position: relative;
+  z-index: 1;
   border-radius: 26px;
   border: 1px solid rgba(255, 255, 255, 0.46);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(232, 242, 252, 0.78));
@@ -519,11 +568,26 @@ body,
   animation: fadeUp 700ms ease both;
 }
 
+.intro-visual-card {
+  display: grid;
+  align-content: start;
+}
+
+.intro-illustration {
+  width: min(100%, 260px);
+  margin: 0 auto 14px;
+  filter: drop-shadow(0 18px 28px rgba(13, 45, 83, 0.1));
+}
+
 .intro-grid,
 .expertise-grid,
 .sector-grid,
 .engagement-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.engagement-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .expertise-grid {
@@ -587,6 +651,222 @@ body,
 
 .advantage-banner p {
   color: rgba(255, 255, 255, 0.92);
+}
+
+.advantage-copy {
+  display: grid;
+  align-items: center;
+  gap: 16px;
+}
+
+.advantage-art {
+  width: min(160px, 100%);
+  justify-self: end;
+  opacity: 0.92;
+  filter: drop-shadow(0 14px 24px rgba(7, 18, 34, 0.28));
+}
+
+.spotlight-grid,
+.business-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.spotlight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.spotlight-card,
+.business-card {
+  min-width: 0;
+  border: 1px solid rgba(13, 45, 83, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 38px rgba(8, 30, 66, 0.08);
+}
+
+.spotlight-card {
+  display: grid;
+  overflow: hidden;
+}
+
+.spotlight-copy {
+  padding: 22px 22px 12px;
+}
+
+.spotlight-copy span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(47, 123, 231, 0.1);
+  color: var(--blue-700);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.spotlight-art-wrap {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 8px 20px 24px;
+  background:
+    radial-gradient(circle at top, rgba(47, 123, 231, 0.12), transparent 45%),
+    linear-gradient(180deg, rgba(243, 248, 255, 0.96), rgba(232, 242, 252, 0.7));
+}
+
+.spotlight-art {
+  max-width: 100%;
+  height: auto;
+}
+
+.spotlight-image-large {
+  width: 86%;
+}
+
+.spotlight-image-people {
+  width: 88%;
+}
+
+.spotlight-image-mobile {
+  width: 62%;
+}
+
+.business-grid {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: stretch;
+}
+
+.delivery-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.delivery-card,
+.testimonial-card,
+.testimonial-feature {
+  min-width: 0;
+  border: 1px solid rgba(13, 45, 83, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 38px rgba(8, 30, 66, 0.08);
+}
+
+.delivery-card {
+  padding: 22px;
+}
+
+.delivery-card span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--blue-700);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.delivery-card h3 {
+  margin-bottom: 10px;
+}
+
+.testimonials-section {
+  position: relative;
+}
+
+.testimonial-layout {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.testimonial-feature {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(47, 123, 231, 0.12), transparent 34%),
+    rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-art {
+  width: min(240px, 100%);
+  margin: 0 auto;
+}
+
+.testimonial-grid {
+  grid-template-columns: 1fr;
+}
+
+.testimonial-card {
+  padding: 22px;
+}
+
+.testimonial-quote {
+  margin: 0 0 18px;
+  color: var(--text-strong);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.testimonial-card strong {
+  display: block;
+  color: var(--text-strong);
+}
+
+.testimonial-card span {
+  color: var(--text-soft);
+}
+
+.business-card {
+  padding: 24px;
+}
+
+.business-card-visual {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(47, 123, 231, 0.1), transparent 32%),
+    rgba(255, 255, 255, 0.9);
+}
+
+.business-art {
+  width: min(180px, 100%);
+  margin: 0 0 14px auto;
+  display: block;
+}
+
+.revenue-track-list,
+.tip-list {
+  display: grid;
+  gap: 14px;
+}
+
+.revenue-track {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(245, 249, 255, 0.92);
+  border: 1px solid rgba(13, 45, 83, 0.08);
+}
+
+.revenue-track strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-strong);
+}
+
+.revenue-track p {
+  margin: 0;
+}
+
+.tip-list {
+  padding-left: 18px;
+  margin: 12px 0 0;
+}
+
+.tip-list li {
+  color: var(--text-soft);
+  line-height: 1.65;
 }
 
 .principles-layout,
@@ -909,15 +1189,18 @@ body,
 }
 
 .footer-email-link {
-  flex-wrap: nowrap;
+  display: grid !important;
+  justify-items: center;
+  gap: 8px !important;
+  width: 100%;
 }
 
-.footer-email-link span {
-  font-size: 0.84rem;
-  line-height: 1.25;
-  white-space: nowrap;
-  overflow-wrap: normal;
-  word-break: normal;
+.footer-email-link .email-display {
+  max-width: 18ch;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(0.8rem, 0.72rem + 0.25vw, 0.92rem);
+  line-height: 1.35;
+  text-align: center;
 }
 
 .footer-top-link {
@@ -1144,6 +1427,16 @@ body,
   }
 }
 
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 1180px) {
   .hero-section,
   .principles-layout,
@@ -1155,7 +1448,11 @@ body,
   .services-grid,
   .expertise-grid,
   .intro-grid,
-  .engagement-grid {
+  .engagement-grid,
+  .spotlight-grid,
+  .business-grid,
+  .delivery-grid,
+  .testimonial-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1239,6 +1536,10 @@ body,
   .expertise-grid,
   .sector-grid,
   .engagement-grid,
+  .spotlight-grid,
+  .business-grid,
+  .delivery-grid,
+  .testimonial-layout,
   .field-grid,
   .value-list {
     grid-template-columns: 1fr;
@@ -1274,6 +1575,24 @@ body,
     padding: 12px 0 0;
   }
 
+  .hero-monitor-art {
+    width: min(260px, 46%);
+    right: -8px;
+  }
+
+  .hero-hud-art {
+    right: 12px;
+    width: min(170px, 32%);
+  }
+
+  .hero-soc-art {
+    top: 84px;
+    left: auto;
+    right: 18px;
+    width: 72px;
+    opacity: 0.62;
+  }
+
   .hero-panel,
   .stat-card {
     width: 100%;
@@ -1288,6 +1607,22 @@ body,
   .hero-panel li {
     font-size: 0.98rem;
     overflow-wrap: anywhere;
+  }
+
+  .spotlight-art-wrap {
+    min-height: 200px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage-copy {
+    justify-items: start;
+  }
+
+  .advantage-art {
+    justify-self: start;
   }
 
   .service-marquee-track {
@@ -1376,6 +1711,35 @@ body,
     line-height: 1.55;
   }
 
+  .hero-tech-bg {
+    width: 112%;
+    inset: 18px -12% auto auto;
+    opacity: 0.1;
+  }
+
+  .hero-monitor-art {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(220px, 72%);
+    margin: 0 auto 6px;
+    order: -1;
+    opacity: 0.82;
+  }
+
+  .hero-hud-art {
+    width: 130px;
+    top: 6px;
+    right: -10px;
+    opacity: 0.22;
+  }
+
+  .hero-soc-art {
+    width: 58px;
+    top: 58px;
+    right: 8px;
+  }
+
   .service-marquee {
     display: none;
   }
@@ -1387,6 +1751,35 @@ body,
   .contact-form,
   .summary-panel {
     padding: 20px;
+  }
+
+  .spotlight-copy,
+  .business-card {
+    padding: 20px;
+  }
+
+  .delivery-card,
+  .testimonial-card,
+  .testimonial-feature {
+    padding: 20px;
+  }
+
+  .spotlight-art-wrap {
+    min-height: 170px;
+    padding: 0 16px 20px;
+  }
+
+  .spotlight-image-mobile {
+    width: 70%;
+  }
+
+  .business-art {
+    width: min(150px, 68%);
+    margin: 0 auto 12px;
+  }
+
+  .testimonial-art {
+    width: min(180px, 80%);
   }
 
   .contact-item,
@@ -1406,8 +1799,9 @@ body,
     width: 100%;
   }
 
-  .footer-email-link span {
-    font-size: 0.76rem;
+  .footer-email-link .email-display {
+    max-width: 15ch;
+    font-size: 0.78rem;
   }
 
   .legal-modal {

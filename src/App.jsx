@@ -6,106 +6,145 @@ const navigation = [
   { label: 'Services', href: '#services' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Sectors', href: '#sectors' },
+  { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ]
 
 const stats = [
-  { value: '5+', label: 'technology service capabilities' },
-  { value: '2', label: 'direct contact lines across regions' },
-  { value: '1', label: 'partner for build, secure, and investigate' },
+  { value: '8+', label: 'software and technology service lines' },
+  { value: '3', label: 'delivery models from projects to retainers' },
+  { value: '2', label: 'direct contact lines across Kenya and the U.S.' },
 ]
 
 const focusWords = [
-  'software engineering',
-  'cybersecurity analysis',
-  'penetration testing',
-  'digital forensics',
-  'IT consulting',
+  'custom software development',
+  'web development services',
+  'mobile app development',
+  'software consulting',
+  'SaaS product strategy',
+  'IT and cloud services',
+  'AI and machine learning',
+  'support and maintenance',
 ]
 
 const tickerItems = [
-  'Web Platforms',
-  'Security Reviews',
-  'Penetration Testing',
-  'Digital Forensics',
-  'IT Strategy',
-  'Systems Integration',
+  'Custom Business Systems',
+  'Web Applications',
+  'Mobile Apps',
+  'Architecture Consulting',
+  'SaaS Products',
+  'Cloud and DevOps',
+  'AI Workflows',
+  'Support Retainers',
 ]
 
 const serviceLines = [
   {
     icon: 'code',
-    title: 'Versatile Software Engineering',
+    title: 'Custom Software Development',
     description:
-      'Design and build web platforms, internal systems, and tailored digital tools that support growth, automation, and operational clarity.',
+      'Build software tailored to the way a business actually works, from operations platforms to internal tools and industry-specific solutions.',
     bullets: [
-      'Modern web application delivery',
-      'Workflow automation and systems integration',
-      'Maintainable, performance-minded engineering',
+      'Business management and workflow systems',
+      'Inventory, accounting, and operations tools',
+      'Niche software for healthcare, logistics, and finance',
     ],
   },
   {
-    icon: 'shield',
-    title: 'Cybersecurity Analysis',
+    icon: 'globe',
+    title: 'Web Development Services',
     description:
-      'Assess technology environments, identify risk, and strengthen security posture with practical recommendations grounded in real business needs.',
+      'Create modern websites and web applications that support sales, operations, customer engagement, and digital product delivery.',
     bullets: [
-      'Security posture reviews',
-      'Risk analysis and controls guidance',
-      'Security-aware improvement planning',
+      'Corporate websites and portals',
+      'E-commerce and SaaS applications',
+      'Hosting, maintenance, and performance optimization',
     ],
   },
   {
-    icon: 'target',
-    title: 'Penetration Testing',
+    icon: 'mobile',
+    title: 'Mobile App Development',
     description:
-      'Evaluate applications, systems, and exposed assets through structured testing that helps uncover weaknesses before attackers do.',
+      'Design and deliver mobile products for businesses and startups that need utility apps, customer tools, or cross-platform experiences.',
     bullets: [
-      'Web and infrastructure testing support',
-      'Vulnerability validation and prioritization',
-      'Actionable remediation guidance',
-    ],
-  },
-  {
-    icon: 'search',
-    title: 'Digital Forensics',
-    description:
-      'Support investigations with disciplined evidence handling, incident reconstruction, and technical analysis that helps teams respond with confidence.',
-    bullets: [
-      'Incident review and evidence support',
-      'Technical investigation assistance',
-      'Forensics-minded reporting and follow-up',
+      'iOS, Android, and cross-platform apps',
+      'Utility and workflow mobile products',
+      'App support from launch to iteration',
     ],
   },
   {
     icon: 'briefcase',
-    title: 'IT Consulting',
+    title: 'Software Consulting',
     description:
-      'Guide organizations on technology decisions, architecture direction, security priorities, and modernization plans that align with business goals.',
+      'Advise teams on how to use technology well, improve architecture, and make better product, cloud, and performance decisions.',
     bullets: [
-      'Technology roadmaps and advisory',
-      'Infrastructure and systems guidance',
-      'Modernization planning for growing teams',
+      'Architecture and platform design',
+      'Cloud migration and modernization planning',
+      'Performance and systems improvement guidance',
+    ],
+  },
+  {
+    icon: 'stack',
+    title: 'SaaS Product Development',
+    description:
+      'Shape and build subscription software products that create recurring revenue and long-term product value.',
+    bullets: [
+      'Product strategy and MVP design',
+      'Analytics, productivity, and automation platforms',
+      'Subscription-ready product engineering',
+    ],
+  },
+  {
+    icon: 'cloud',
+    title: 'IT and Cloud Services',
+    description:
+      'Support infrastructure, automation, and secure cloud environments for teams that want resilient operations and scalable delivery.',
+    bullets: [
+      'AWS, Azure, and GCP guidance',
+      'DevOps automation and systems integration',
+      'Cloud operations and cybersecurity support',
+    ],
+  },
+  {
+    icon: 'spark',
+    title: 'AI and Machine Learning Services',
+    description:
+      'Design AI-enabled workflows and products for organizations that want predictive insight, automation, and smarter digital experiences.',
+    bullets: [
+      'Chatbots and AI assistants',
+      'Predictive analytics and recommendation workflows',
+      'Practical AI integration for business use cases',
+    ],
+  },
+  {
+    icon: 'support',
+    title: 'Technical Support and Maintenance',
+    description:
+      'Stay alongside clients after launch with structured maintenance, updates, bug fixing, and ongoing optimization.',
+    bullets: [
+      'Bug fixes and security patching',
+      'Performance monitoring and optimization',
+      'Support retainers for recurring revenue and continuity',
     ],
   },
 ]
 
 const expertiseAreas = [
   {
-    title: 'Secure Software Delivery',
-    text: 'From concept to launch, we focus on applications that are usable, maintainable, and built with security in mind.',
+    title: 'Custom Solution Design',
+    text: 'We translate business requirements into software systems that fit real operations instead of forcing teams into rigid generic tools.',
   },
   {
-    title: 'Security Testing and Validation',
-    text: 'We help teams move from assumptions to evidence through focused assessment, penetration testing, and clearer remediation priorities.',
+    title: 'Web and Mobile Product Delivery',
+    text: 'From websites to cross-platform applications, we build digital products that are usable, performant, and ready for growth.',
   },
   {
-    title: 'Incident Support and Forensics',
-    text: 'When something goes wrong, we help document what happened, preserve technical clarity, and shape a measured response.',
+    title: 'Cloud, DevOps, and Security Enablement',
+    text: 'We help companies modernize infrastructure, improve reliability, and strengthen cloud operations with practical engineering support.',
   },
   {
-    title: 'Technology Strategy',
-    text: 'We connect business direction with practical technical decisions so organizations can modernize without unnecessary complexity.',
+    title: 'AI and Product Scale',
+    text: 'We identify where SaaS, automation, and AI can create repeatable value and help teams turn those ideas into workable products.',
   },
 ]
 
@@ -113,43 +152,139 @@ const sectors = [
   {
     title: 'Healthcare',
     description:
-      'Support secure systems, reliable infrastructure, and digital workflows where continuity and trust are non-negotiable.',
+      'Build secure software, digital workflows, and operational tools for environments where reliability and trust matter every day.',
   },
   {
-    title: 'Education',
+    title: 'Logistics and Operations',
     description:
-      'Help institutions strengthen digital platforms, device strategy, and technology environments that support modern learning.',
+      'Design tracking systems, internal operations tools, and process automation for businesses moving goods, services, and field teams.',
   },
   {
-    title: 'Telecommunications',
+    title: 'Finance and Professional Services',
     description:
-      'Bring security-focused thinking and technical advisory to environments where uptime, reliability, and scale matter.',
+      'Support firms that need performance-minded applications, reporting systems, secure integrations, and dependable client-facing tools.',
   },
   {
-    title: 'Manufacturing',
+    title: 'Startups and Growing Businesses',
     description:
-      'Improve operational systems, process visibility, and technology readiness for fast-moving industrial teams.',
+      'Help growing companies move from idea to MVP to supportable products with the right balance of speed, quality, and scalability.',
   },
 ]
 
 const engagements = [
   {
-    title: 'Application Security Review',
-    label: 'Cybersecurity',
+    title: 'Business Operations Platform Build',
+    label: 'Custom Software',
     description:
-      'A focused engagement for identifying web application weaknesses, validating risk, and organizing remediation priorities for internal teams.',
+      'A delivery track for companies that need a tailored system for internal workflows, operations, inventory, finance, or reporting.',
   },
   {
-    title: 'Digital Forensics Readiness',
-    label: 'Forensics',
+    title: 'Web or Mobile Product Launch',
+    label: 'Product Delivery',
     description:
-      'A practical track for organizations that need clearer incident evidence handling, response structure, and technical investigation support.',
+      'A practical engagement for building customer-facing websites, SaaS MVPs, or mobile apps with room for future scale.',
   },
   {
-    title: 'Platform Modernization Advisory',
-    label: 'Consulting',
+    title: 'Cloud and AI Modernization Sprint',
+    label: 'Cloud and AI',
     description:
-      'A strategy-led engagement that connects software, infrastructure, and security decisions into a coherent modernization plan.',
+      'A strategy-plus-implementation track for cloud setup, automation, infrastructure improvement, or AI-enabled business workflows.',
+  },
+  {
+    title: 'Support and Optimization Retainer',
+    label: 'Maintenance',
+    description:
+      'An ongoing support option that covers updates, bug fixes, security improvements, monitoring, and continued performance tuning.',
+  },
+]
+
+const serviceSpotlights = [
+  {
+    label: 'Custom Builds',
+    title: 'Tailored systems for teams that have outgrown off-the-shelf tools.',
+    text: 'This is where custom software, web applications, and operational platforms come together to solve business-specific problems cleanly.',
+    image: '/code-display.svg',
+    imageClass: 'spotlight-image-large',
+  },
+  {
+    label: 'Consulting and Delivery',
+    title: 'Advisory work that turns strategy into cloud, product, and architecture momentum.',
+    text: 'Software consulting, cloud planning, and delivery support help clients make stronger technical decisions before expensive mistakes compound.',
+    image: '/tech-collaboration.svg',
+    imageClass: 'spotlight-image-people',
+  },
+  {
+    label: 'Recurring Revenue',
+    title: 'SaaS, maintenance, and AI workflows create longer-term value beyond one-off projects.',
+    text: 'The strongest software companies usually blend project delivery with repeatable products, retainers, and automation services.',
+    image: '/mobile-apps.svg',
+    imageClass: 'spotlight-image-mobile',
+  },
+]
+
+const businessTips = [
+  'Start with the strongest service you can deliver confidently right now.',
+  'Look for local or niche demand where software and automation solve clear pain points.',
+  'Build recurring revenue through support, SaaS, cloud management, or maintenance contracts.',
+  'Scale gradually by combining project work, advisory work, and repeatable service packages.',
+]
+
+const revenueTracks = [
+  {
+    title: 'Project Delivery',
+    text: 'Custom software, web platforms, and mobile applications are strong starting offers for direct client work.',
+  },
+  {
+    title: 'Advisory and Consulting',
+    text: 'Architecture, cloud migration, and technical planning create high-value engagements with lower delivery risk.',
+  },
+  {
+    title: 'Recurring Growth',
+    text: 'SaaS subscriptions, support retainers, cloud management, and optimization contracts help stabilize long-term income.',
+  },
+]
+
+const deliverySteps = [
+  {
+    phase: '01',
+    title: 'Discovery and Fit',
+    text: 'We clarify business goals, technical needs, timelines, and the right service model before delivery starts.',
+  },
+  {
+    phase: '02',
+    title: 'Solution Design',
+    text: 'We shape the product, platform, or support structure around usability, maintainability, and practical business value.',
+  },
+  {
+    phase: '03',
+    title: 'Build and Validate',
+    text: 'We execute with disciplined engineering, structured review, and clear progress visibility across the engagement.',
+  },
+  {
+    phase: '04',
+    title: 'Launch and Support',
+    text: 'We stay available for rollout, refinement, optimization, and recurring support where continuity matters.',
+  },
+]
+
+const testimonials = [
+  {
+    quote:
+      'Ready for a verified client testimonial covering a custom software or operations platform engagement.',
+    name: 'Verified client quote',
+    role: 'Software delivery reference',
+  },
+  {
+    quote:
+      'Ready for a verified client testimonial covering web, mobile, SaaS, or digital product work.',
+    name: 'Verified client quote',
+    role: 'Digital product reference',
+  },
+  {
+    quote:
+      'Ready for a verified client testimonial covering consulting, cloud services, AI support, or maintenance.',
+    name: 'Verified client quote',
+    role: 'Advisory or support reference',
   },
 ]
 
@@ -236,7 +371,7 @@ const initialFormState = {
   company: '',
   email: '',
   phone: '',
-  service: 'Versatile Software Engineering',
+  service: 'Custom Software Development',
   brief: '',
 }
 
@@ -292,6 +427,44 @@ function Icon({ type }) {
           <path d="M4 11a32.8 32.8 0 0 0 16 0" />
         </svg>
       )
+    case 'mobile':
+      return (
+        <svg {...commonProps}>
+          <rect x="7" y="3.5" width="10" height="17" rx="2.4" />
+          <path d="M10 6h4" />
+          <circle cx="12" cy="17" r=".7" fill="currentColor" stroke="none" />
+        </svg>
+      )
+    case 'stack':
+      return (
+        <svg {...commonProps}>
+          <path d="m12 4 7 4-7 4-7-4 7-4Z" />
+          <path d="m5 12 7 4 7-4" />
+          <path d="m5 16 7 4 7-4" />
+        </svg>
+      )
+    case 'cloud':
+      return (
+        <svg {...commonProps}>
+          <path d="M8.5 18H17a4 4 0 0 0 .5-8 5.5 5.5 0 0 0-10.8 1.2A3.8 3.8 0 0 0 8.5 18Z" />
+          <path d="M12 10.5v6" />
+          <path d="m9.8 14.2 2.2 2.3 2.2-2.3" />
+        </svg>
+      )
+    case 'spark':
+      return (
+        <svg {...commonProps}>
+          <path d="m12 3 1.8 4.8L19 9.6l-4 2.8 1.5 5-4.5-3-4.5 3 1.5-5-4-2.8 5.2-1.8L12 3Z" />
+        </svg>
+      )
+    case 'support':
+      return (
+        <svg {...commonProps}>
+          <path d="m14.8 5.2 4 4" />
+          <path d="m16.6 3.4 2 2a1.8 1.8 0 0 1 0 2.6l-6.3 6.3a3 3 0 0 1-1.6.8l-3.3.5.5-3.3a3 3 0 0 1 .8-1.6l6.3-6.3a1.8 1.8 0 0 1 2.6 0Z" />
+          <path d="M5 19h14" />
+        </svg>
+      )
     case 'mail':
       return (
         <svg {...commonProps}>
@@ -338,6 +511,14 @@ function Icon({ type }) {
     default:
       return null
   }
+}
+
+function EmailAddress() {
+  return (
+    <span className="email-display">
+      metlamarc<wbr />investments<wbr />limited<wbr />@gmail<wbr />.com
+    </span>
+  )
 }
 
 function App() {
@@ -426,13 +607,14 @@ function App() {
       <main>
         <section className="hero-section" id="home">
           <div className="hero-copy">
-            <p className="eyebrow">Software Engineering | Cybersecurity | Digital Forensics</p>
-            <h1>Professional technology services for teams that need to build, secure, and modernize with confidence.</h1>
+            <p className="eyebrow">Custom Software | Web | Mobile | Cloud | AI</p>
+            <h1>Professional software company services designed for skill, demand, and long-term scale.</h1>
             <p className="hero-text">
-              Metlamarc Investments Limited is a technology-first company focused on
-              software engineering, cybersecurity analysis, penetration testing,
-              digital forensics, and IT consulting. When needed, we also support
-              aligned technology procurement as part of a broader delivery strategy.
+              Metlamarc Investments Limited is positioned as a modern software and
+              technology company offering custom software development, websites and
+              web apps, mobile products, consulting, SaaS delivery, cloud services,
+              AI-enabled solutions, and ongoing maintenance. We build around client
+              needs while keeping scalability and recurring value in view.
             </p>
 
             <div className="hero-motion-copy" aria-label="Active Metlamarc focus areas">
@@ -476,19 +658,23 @@ function App() {
           <div className="hero-visual" aria-hidden="true">
             <div className="signal-orb signal-orb-large" />
             <div className="signal-orb signal-orb-small" />
+            <img className="hero-tech-bg" src="/circuit-grid.svg" alt="" />
+            <img className="hero-monitor-art" src="/code-display.svg" alt="" />
+            <img className="hero-hud-art" src="/hud-ring.svg" alt="" />
+            <img className="hero-soc-art" src="/soc-screen.svg" alt="" />
 
             <article className="hero-panel hero-panel-primary">
               <span>Core Focus</span>
-              <strong>Engineering, security, testing, forensics, and advisory</strong>
-              <p>Technology services structured to help organizations reduce risk and move forward with clarity.</p>
+              <strong>Software products, delivery systems, cloud services, and scalable advisory</strong>
+              <p>Business-ready services shaped to help companies launch, modernize, automate, and grow with clarity.</p>
             </article>
 
             <article className="hero-panel hero-panel-secondary">
               <span>Professional Practice</span>
               <ul>
-                <li>Security-aware delivery</li>
-                <li>Evidence-based assessment</li>
-                <li>Business-aligned execution</li>
+                <li>Demand-aware service design</li>
+                <li>Scalable delivery and support models</li>
+                <li>Business-aligned engineering execution</li>
               </ul>
             </article>
 
@@ -505,9 +691,10 @@ function App() {
             <h2>A technology partner built on trust, precision, and professional execution.</h2>
             <p>
               Our mission is to help clients make better technology decisions,
-              strengthen digital resilience, and implement solutions that create
-              measurable operational value. We work with a customer-first mindset,
-              combining technical depth with practical business understanding.
+              build software that matches real market needs, and implement services
+              that can grow from immediate project work into long-term value. We
+              work with a customer-first mindset, combining technical depth with
+              practical business understanding.
             </p>
           </div>
 
@@ -515,22 +702,30 @@ function App() {
             <article className="info-card">
               <h3>Mission</h3>
               <p>
-                Deliver high-quality technology services that help customers succeed,
-                reduce friction, and build lasting confidence in their digital systems.
+                Deliver high-quality software and technology services that help customers
+                succeed, reduce friction, and build lasting confidence in their digital systems.
               </p>
             </article>
             <article className="info-card">
               <h3>Vision</h3>
               <p>
-                Be recognized for quality, innovation, security-minded thinking, and
-                a consistent commitment to customer satisfaction.
+                Be recognized as a dependable software company known for quality, innovation,
+                scalable thinking, and consistent customer value.
               </p>
             </article>
             <article className="info-card">
               <h3>Culture</h3>
               <p>
                 We lead with excellence, integrity, teamwork, and innovation so every
-                engagement feels disciplined, responsive, and dependable.
+                engagement feels disciplined, commercially aware, and dependable.
+              </p>
+            </article>
+            <article className="info-card intro-visual-card">
+              <img className="intro-illustration" src="/tech-collaboration.svg" alt="" />
+              <h3>Collaborative Delivery</h3>
+              <p>
+                We work closely with client teams to turn technical problems into
+                clear, executable outcomes across software, security, and advisory work.
               </p>
             </article>
           </div>
@@ -539,11 +734,11 @@ function App() {
         <section className="section" id="services">
           <div className="section-heading">
             <p className="eyebrow">Services</p>
-            <h2>Technology services designed to solve real operational and security challenges.</h2>
+            <h2>Software company services shaped around strong skills, real demand, and scalable growth.</h2>
             <p>
-              We are presenting Metlamarc first as a technology company. The emphasis
-              is on engineering, security, investigation, and advisory support that
-              helps clients work more safely and effectively.
+              This service mix covers the strongest routes for a modern software business:
+              custom development, digital product delivery, consulting, cloud services,
+              AI opportunities, and recurring maintenance support.
             </p>
           </div>
 
@@ -566,25 +761,50 @@ function App() {
 
           <article className="advantage-banner">
             <div>
-              <p className="eyebrow">Supporting Capability</p>
-              <h3>Technology procurement remains available when it strengthens the broader solution.</h3>
+              <p className="eyebrow">Business Positioning</p>
+              <h3>Lead with the services you can deliver best, then expand into recurring and scalable offerings.</h3>
             </div>
-            <p>
-              We still support aligned technology sourcing where needed, but our lead
-              message is professional technology delivery, cybersecurity depth, and
-              practical advisory value.
-            </p>
+            <div className="advantage-copy">
+              <p>
+                A strong software company usually begins with custom builds or web
+                delivery, then layers in consulting, support, SaaS, cloud work, and
+                automation as capability and demand keep growing.
+              </p>
+              <img className="advantage-art" src="/connectivity-stack.svg" alt="" />
+            </div>
           </article>
+        </section>
+
+        <section className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Service Models</p>
+            <h2>Where custom delivery, product thinking, and recurring revenue meet.</h2>
+          </div>
+
+          <div className="spotlight-grid">
+            {serviceSpotlights.map((item) => (
+              <article key={item.title} className="spotlight-card">
+                <div className="spotlight-copy">
+                  <span>{item.label}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+                <div className="spotlight-art-wrap">
+                  <img className={`spotlight-art ${item.imageClass}`} src={item.image} alt="" />
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="section" id="expertise">
           <div className="section-heading">
             <p className="eyebrow">Expertise</p>
-            <h2>How Metlamarc turns technical capability into business confidence.</h2>
+            <h2>How Metlamarc turns software capability into business confidence.</h2>
             <p>
               Our work is guided by quality, customer focus, innovation, integrity,
-              and teamwork. We combine those values with a security-aware operating
-              model that prioritizes clarity and dependable delivery.
+              and teamwork. We combine those values with a delivery model that values
+              clarity, market fit, technical quality, and long-term maintainability.
             </p>
           </div>
 
@@ -600,11 +820,11 @@ function App() {
           <div className="principles-layout">
             <article className="belief-card">
               <p className="eyebrow">What We Believe</p>
-              <h3>Technology is most valuable when it is secure, understandable, and aligned to real work.</h3>
+              <h3>Technology is most valuable when it solves real problems, fits demand, and can scale over time.</h3>
               <p>
-                We believe software, cybersecurity, and technical advisory services
-                should not create confusion. They should reduce risk, sharpen
-                decisions, and make teams more capable over time.
+                We believe software services should not only be technically sound.
+                They should also reflect what clients actually need now, what they will
+                pay for, and what can evolve into longer-term recurring value.
               </p>
             </article>
 
@@ -642,7 +862,7 @@ function App() {
         <section className="section">
           <div className="section-heading">
             <p className="eyebrow">Engagement Examples</p>
-            <h2>Professional service tracks that speak directly to technology outcomes.</h2>
+            <h2>Practical software company offers that are realistic to sell and deliver.</h2>
           </div>
 
           <div className="engagement-grid">
@@ -653,6 +873,103 @@ function App() {
                 <p>{item.description}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Business Focus</p>
+            <h2>Choose offers that balance skill, demand, and scalability from the start.</h2>
+            <p>
+              If you are building a small software company, the smartest path is usually
+              to begin with what you can deliver strongly, then add advisory, maintenance,
+              cloud, SaaS, or AI services as the business matures.
+            </p>
+          </div>
+
+          <div className="business-grid">
+            <article className="business-card">
+              <p className="eyebrow">Recurring Revenue Paths</p>
+              <h3>Build a company model that does not rely only on one-off projects.</h3>
+              <div className="revenue-track-list">
+                {revenueTracks.map((track) => (
+                  <div key={track.title} className="revenue-track">
+                    <strong>{track.title}</strong>
+                    <p>{track.text}</p>
+                  </div>
+                ))}
+              </div>
+            </article>
+
+            <article className="business-card business-card-visual">
+              <img className="business-art" src="/ai-workflow.svg" alt="" />
+              <p className="eyebrow">Decision Tips</p>
+              <h3>Good service selection starts with honest capability and clear demand.</h3>
+              <ul className="tip-list">
+                {businessTips.map((tip) => (
+                  <li key={tip}>{tip}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Company Approach</p>
+            <h2>A company site should show not only what you offer, but how you deliver.</h2>
+            <p>
+              Metlamarc is presented as a professional software company with a clear
+              engagement path, from discovery and architecture through build, launch,
+              and ongoing support.
+            </p>
+          </div>
+
+          <div className="delivery-grid">
+            {deliverySteps.map((step) => (
+              <article key={step.phase} className="delivery-card">
+                <span>{step.phase}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section testimonials-section" id="testimonials">
+          <div className="section-heading">
+            <p className="eyebrow">Testimonials</p>
+            <h2>Professional presentation with room for verified client trust signals.</h2>
+            <p>
+              This section is structured for real testimonials so the company site
+              stays credible. As client approvals come in, these cards can be updated
+              with named quotes, organizations, and case-study references.
+            </p>
+          </div>
+
+          <div className="testimonial-layout">
+            <article className="testimonial-feature">
+              <img className="testimonial-art" src="/tech-collaboration.svg" alt="" />
+              <div>
+                <p className="eyebrow">Client Confidence</p>
+                <h3>Built to support future case studies, references, and public proof of delivery.</h3>
+                <p>
+                  Until verified testimonials are published, the site now has a proper
+                  trust section that looks complete and professional without inventing
+                  claims that have not yet been approved for public use.
+                </p>
+              </div>
+            </article>
+
+            <div className="testimonial-grid">
+              {testimonials.map((item) => (
+                <article key={item.role} className="testimonial-card">
+                  <p className="testimonial-quote">"{item.quote}"</p>
+                  <strong>{item.name}</strong>
+                  <span>{item.role}</span>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -676,7 +993,7 @@ function App() {
                     <Icon type="mail" />
                     <div>
                       <strong>Email</strong>
-                      <span>metlamarcinvestmentslimited@gmail.com</span>
+                      <EmailAddress />
                     </div>
                   </a>
                   <a className="contact-item" href="tel:+254719174450">
@@ -806,8 +1123,9 @@ function App() {
           <img className="footer-logo" src="/metlamarc-wordmark.svg" alt="Metlamarc wordmark" />
           <h3>Metlamarc Investments Limited</h3>
           <p>
-            Metlamarc Investments Limited delivers professional software,
-            cybersecurity, penetration testing, digital forensics, and IT consulting services.
+            Metlamarc Investments Limited delivers custom software, web and mobile
+            development, SaaS, cloud, AI, consulting, and maintenance services for
+            organizations that want dependable digital growth.
           </p>
           <div className="footer-socials">
             {socialChannels.map((channel) => (
@@ -843,7 +1161,7 @@ function App() {
           <p className="footer-label">Contact</p>
           <a className="footer-email-link" href="mailto:metlamarcinvestmentslimited@gmail.com">
             <Icon type="mail" />
-            <span>metlamarcinvestmentslimited@gmail.com</span>
+            <EmailAddress />
           </a>
           <a href="tel:+254719174450">
             <Icon type="phone" />

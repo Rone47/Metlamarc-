@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="soc-a" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="14" width="136" height="108" rx="24" fill="none" stroke="url(#soc-a)" stroke-width="10" />
+  <rect x="36" y="132" width="88" height="12" rx="6" fill="url(#soc-a)" />
+  <rect x="72" y="120" width="16" height="18" rx="5" fill="url(#soc-a)" />
+  <text x="80" y="78" fill="url(#soc-a)" font-family="Montserrat, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="2" text-anchor="middle">SOC</text>
+</svg>
