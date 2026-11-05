@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.invoice-page {
+  min-height: 100vh;
+  padding: 32px 20px 80px;
+}
+
+.invoice-toolbar {
+  width: min(880px, 100%);
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.invoice-toolbar a {
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.invoice-toolbar a:hover {
+  color: var(--text-strong);
+}
+
+.invoice-sheet {
+  width: min(880px, 100%);
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 30px 60px rgba(13, 45, 83, 0.14);
+  padding: 48px 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+.invoice-sheet::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--blue-900), var(--blue-500));
+}
+
+.invoice-letterhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 2px solid var(--blue-900);
+}
+
+.invoice-letterhead-brand img {
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.invoice-letterhead-brand strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+}
+
+.invoice-letterhead-brand span {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  margin-top: 2px;
+}
+
+.invoice-letterhead-brand .invoice-letterhead-contact {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.invoice-letterhead-meta {
+  text-align: right;
+}
+
+.invoice-letterhead-meta h1 {
+  font-size: 1.7rem;
+  letter-spacing: 0.08em;
+  color: var(--blue-900);
+}
+
+.invoice-letterhead-meta dl {
+  margin-top: 10px;
+  font-size: 0.84rem;
+}
+
+.invoice-letterhead-meta dl div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 3px;
+}
+
+.invoice-letterhead-meta dt {
+  color: var(--text-soft);
+}
+
+.invoice-letterhead-meta dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.invoice-parties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.invoice-parties h4 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.invoice-parties strong {
+  display: block;
+  font-size: 1.02rem;
+  color: var(--text-strong);
+}
+
+.invoice-parties p {
+  margin-top: 2px;
+  font-size: 0.88rem;
+}
+
+.invoice-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.invoice-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+
+.invoice-items-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: white;
+  background: var(--blue-900);
+  padding: 10px 14px;
+}
+
+.invoice-items-table th:last-child,
+.invoice-items-table td:last-child {
+  text-align: right;
+}
+
+.invoice-items-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(13, 45, 83, 0.1);
+  font-size: 0.92rem;
+}
+
+.invoice-items-table td strong {
+  display: block;
+  color: var(--text-strong);
+}
+
+.invoice-total-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 16px 14px;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--blue-900);
+}
+
+.invoice-total-row span:first-child {
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+.invoice-total-row strong {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--blue-900);
+}
+
+.invoice-notes {
+  margin-bottom: 28px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border-radius: 10px;
+  font-size: 0.88rem;
+}
+
+.invoice-signoff {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 20px;
+  align-items: end;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.invoice-signature strong.signature-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: var(--blue-900);
+  display: block;
+  line-height: 1;
+}
+
+.invoice-signature .signature-line {
+  margin-top: 8px;
+  border-top: 1px solid rgba(13, 45, 83, 0.35);
+  padding-top: 6px;
+}
+
+.invoice-signature .signature-name {
+  font-weight: 700;
+  color: var(--text-strong);
+  font-size: 0.9rem;
+}
+
+.invoice-signature .signature-title {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.invoice-signature .signature-contact {
+  font-size: 0.76rem;
+  color: var(--text-soft);
+  margin-top: 2px;
+}
+
+.invoice-stamp {
+  width: 128px;
+  height: 128px;
+  border: 3px double #b91c1c;
+  border-radius: 50%;
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-9deg);
+  opacity: 0.85;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.invoice-stamp-inner {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+}
+
+.invoice-stamp-inner .invoice-stamp-brand {
+  font-size: 0.72rem;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.invoice-stamp-inner .invoice-stamp-date {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.invoice-footer {
+  margin-top: 34px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(13, 45, 83, 0.1);
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.invoice-not-found {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .invoice-page {
+    padding: 0;
+  }
+
+  .invoice-sheet {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 24px 8px;
+    width: 100%;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media (max-width: 720px) {
+  .invoice-sheet {
+    padding: 28px 20px;
+  }
+
+  .invoice-letterhead {
+    flex-direction: column;
+  }
+
+  .invoice-letterhead-meta {
+    text-align: left;
+  }
+
+  .invoice-letterhead-meta dl div {
+    justify-content: flex-start;
+  }
+
+  .invoice-parties {
+    grid-template-columns: 1fr;
+  }
+
+  .invoice-signoff {
+    grid-template-columns: 1fr;
+  }
+}
